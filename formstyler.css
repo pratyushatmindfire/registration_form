@@ -1,0 +1,14 @@
+#header
+{
+	text-align: center;
+}
+
+#overlay
+{
+  	margin-top: 10vh;
+  	margin-bottom: 10vh;
+  	margin-left:10vw;
+  	margin-right: 10vw;
+  	background-color: #c7dcff;
+  	padding: 2% 4% 4% 4%;
+}
