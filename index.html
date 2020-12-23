@@ -2,12 +2,142 @@
 <html>
 <head>
 	<title>Registration Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<h1>This form will look good at the end</h1>
-	<form>
-		<label>Name</label><input type="text">
-		<label>Age</label><input type="text">
+
+
+	<h1>Student Registration Form</h1>
+	<form class="container">
+
+		<!-- Name -->
+		<label>First Name</label><input type="text">
+		<label>Middle Name</label><input type="text">
+		<label>Last Name</label><input type="text">
+
+		<!-- Age -->
+		<label>Age</label><input type="number" required pattern="[0-9]" min=6 max=50>
+
+		<!-- Gender -->
+		<label>Gender</label>
+		<input type="radio" name="gender_control" id="male" value="male">
+    	<label for="nameA">Male</label>
+
+    	<input type="radio" name="gender_control" id="female" value="female">
+    	<label for="nameB">Female</label>
+
+    	<input type="radio" name="gender_control" id="others" value="others">
+    	<label for="nameB">Others</label>
+
+
+    	<!-- Branch -->
+    	<select name="branch_control" id="branch">
+  			<option value="volvo">Computer Science and Engineering</option>
+  			<option value="saab">Electronics</option>
+  			<option value="mercedes">Civil</option>
+  			<option value="audi">Mechanical</option>
+		</select>
+
+
+		<!-- CGPA -->
+		<label>Aggregate CGPA</label>
+		<input type="text" placeholder="Please enter on a scale of 10" required pattern="/^[0-4]\.\d\d$/">
+
+	
+
+		<!-- Date of birth -->
+		<label>Date of birth</label>
+		<input type="date" id="DOB_Control" name="DOB">
+
+
+
+		<!-- Primary Skills -->
+		<label>Primary Skills</label>
+		<input type="checkbox" id="NodeJS" name="NodeJS" value="NodeJS">
+		<label for="NodeJS"> Node JS</label><br>
+
+
+		<input type="checkbox" id="Express" name="Express" value="Express">
+		<label for="Express"> Express</label><br>
+
+
+		<input type="checkbox" id="Angular" name="Angular" value="Angular">
+		<label for="Angular"> Angular</label><br>
+
+
+		<input type="checkbox" id="React" name="React" value="React">
+		<label for="React"> React</label><br>
+
+
+		<input type="checkbox" id="MongoDB" name="MongoDB" value="MongoDB">
+		<label for="MongoDB"> MongoDB</label><br>
+
+
+		<input type="checkbox" id="Postgres" name="Postgres" value="Postgres">
+		<label for="Postgres"> Postgres</label><br>
+
+
+
+
+		<!-- Interests -->
+		<label>Interests</label>
+		<input type="checkbox" id="HomeDIY" name="HomeDIY" value="HomeDIY">
+		<label for="HomeDIY"> HomeDIY</label><br>
+
+
+		<input type="checkbox" id="Guitar" name="Guitar" value="Guitar">
+		<label for="Guitar"> Guitar</label><br>
+
+
+		<input type="checkbox" id="Sports" name="Sports" value="Sports">
+		<label for="Sports"> Sports</label><br>
+
+
+		<input type="checkbox" id="Workout" name="Workout" value="Workout">
+		<label for="Workout"> Workout</label><br>
+
+
+		<input type="checkbox" id="Gaming" name="Gaming" value="Gaming">
+		<label for="Gaming"> Gaming</label><br>
+
+
+		<input type="checkbox" id="Art" name="Art" value="Art">
+		<label for="Art"> Art</label><br>
+
+
+		<input type="checkbox" id="Camping" name="Camping" value="Camping">
+		<label for="Camping"> Camping</label><br>
+
+
+		<input type="checkbox" id="Cooking" name="Cooking" value="Cooking">
+		<label for="Cooking"> Cooking</label><br>
+
+
+		<!-- Favorite shade -->
+		<label>Favorite shade</label>
+		<input type="color" id="Favshade_controller" name="Favshade" value="#ADA5E9">
+
+
+		<!-- Social Media -->
+		<label>Instagram</label><input type="text">
+		<label>LinkedIn</label><input type="text">
+		<label>Facebook</label><input type="text">
+		<label>GitHub</label><input type="text">
+
+
+
+
+		<!-- Current Location -->
+		<label>Location</label>
+		<input type="text" placeholder="enter city name">
+
+
+
+
+
+		<!-- Final Submit -->
+		<button type="submit">Submit
+
 	</form>
 </body>
 </html>
