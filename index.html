@@ -15,127 +15,175 @@
 		<div>
 		<form>
 
-			<!-- Name -->
-			<label>First Name</label><input type="text">
-			<label>Middle Name</label><input type="text">
-			<label>Last Name</label><input type="text">
+			
+			<div id="name_block">
+				<h3>Name</h3>
+				<label id="detail">First Name</label><input type="text">
+				<label id="detail">Middle Name</label><input type="text">
+				<label id="detail">Last Name</label><input type="text">
+			</div>
+			
 
-			<!-- Age -->
-			<label>Age</label><input type="number" required pattern="[0-9]" min=6 max=50>
+			<div id="personal_block">
+				<h3>Personal Details</h3>
+				
+				<span id="detail"><label>Age</label><input type="number" required pattern="[0-9]" min=6 max=50></span>
 
-			<!-- Gender -->
-			<label>Gender</label>
-			<input type="radio" name="gender_control" id="male" value="male">
-    		<label for="nameA">Male</label>
+				
+				<div id="detail">
+					<label>Gender</label>
+					<input type="radio" name="gender_control" id="male" value="male">
+	    			<label for="nameA">Male</label>
 
-    		<input type="radio" name="gender_control" id="female" value="female">
-    		<label for="nameB">Female</label>
+    				<input type="radio" name="gender_control" id="female" value="female">
+    				<label for="nameB">Female</label>
 
-    		<input type="radio" name="gender_control" id="others" value="others">
-    		<label for="nameB">Others</label>
+    				<input type="radio" name="gender_control" id="others" value="others">
+    				<label for="nameB">Others</label>
+				</div>
+				
 
-
-    		<!-- Branch -->
-    		<select name="branch_control" id="branch">
-  				<option value="volvo">Computer Science and Engineering</option>
-  				<option value="saab">Electronics</option>
-  				<option value="mercedes">Civil</option>
-  				<option value="audi">Mechanical</option>
-			</select>
+				<div id="detail">
+					<label>Date of birth</label>
+					<input type="date" id="DOB_Control" name="DOB">
+				</div>
 
 
-			<!-- CGPA -->
-			<label>Aggregate CGPA</label>
-			<input type="text" placeholder="Please enter on a scale of 10" required pattern="/^[0-4]\.\d\d$/">
+				<div id="detail">
+					<label>Location</label>
+					<input type="text" placeholder="enter city name">
+				</div>
+
+			</div>
+
+
+
+
+			<div id="academics_block">		
+				<div id="detail">
+					<label>Branch</label>
+					<select name="branch_control" id="branch">
+  						<option value="volvo">Computer Science and Engineering</option>
+  						<option value="saab">Electronics</option>
+  						<option value="mercedes">Civil</option>
+  						<option value="audi">Mechanical</option>
+					</select>
+				</div>
+    			
+
+
+				<div id="detail">
+					<label>Aggregate CGPA</label>
+					<input type="text" placeholder="Please enter on a scale of 10" required pattern="/^[0-4]\.\d\d$/">
+				</div>			
+			</div>
+    		
 
 	
 
-			<!-- Date of birth -->
-			<label>Date of birth</label>
-			<input type="date" id="DOB_Control" name="DOB">
+			
 
 
 
-			<!-- Primary Skills -->
-			<label>Primary Skills</label>
-			<input type="checkbox" id="NodeJS" name="NodeJS" value="NodeJS">
-			<label for="NodeJS"> Node JS</label><br>
+			<div id="skills_block">
+				<label>Primary Skills</label>
+
+				<span id="detail"><input type="checkbox" id="NodeJS" name="NodeJS" value="NodeJS"><label for="NodeJS">
+				Node JS</label><br></span>
+				
 
 
-			<input type="checkbox" id="Express" name="Express" value="Express">
-			<label for="Express"> Express</label><br>
+				<span id="detail"><input type="checkbox" id="Express" name="Express" value="Express"><label for="Express">
+				Express</label><br></span>
 
 
-			<input type="checkbox" id="Angular" name="Angular" value="Angular">
-			<label for="Angular"> Angular</label><br>
+				<span id="detail"><input type="checkbox" id="Angular" name="Angular" value="Angular"><label for="Angular">
+				Angular</label><br></span>
 
 
-			<input type="checkbox" id="React" name="React" value="React">
-			<label for="React"> React</label><br>
+				<span id="detail"><input type="checkbox" id="React" name="React" value="React"><label for="React"> 
+				React</label><br></span>
 	
 
-			<input type="checkbox" id="MongoDB" name="MongoDB" value="MongoDB">
-			<label for="MongoDB"> MongoDB</label><br>
+				<span id="detail"><input type="checkbox" id="MongoDB" name="MongoDB" value="MongoDB"><label for="MongoDB">
+				MongoDB</label><br></span>
 
 
-			<input type="checkbox" id="Postgres" name="Postgres" value="Postgres">
-			<label for="Postgres"> Postgres</label><br>
+				<span id="detail"><input type="checkbox" id="Postgres" name="Postgres" value="Postgres"><label for="Postgres"> Postgres</label><br></span>
+			</div>
+			
 
 
 
+			<div id="skills_block">
+				<label>Interests</label>
 
-			<!-- Interests -->
-			<label>Interests</label>
-			<input type="checkbox" id="HomeDIY" name="HomeDIY" value="HomeDIY">
-			<label for="HomeDIY"> HomeDIY</label><br>
-
-
-			<input type="checkbox" id="Guitar" name="Guitar" value="Guitar">
-			<label for="Guitar"> Guitar</label><br>
+				<span id="detail">
+				<input type="checkbox" id="HomeDIY" name="HomeDIY" value="HomeDIY">
+				<label for="HomeDIY"> HomeDIY</label><br>
+				</span>
 
 
-			<input type="checkbox" id="Sports" name="Sports" value="Sports">
-			<label for="Sports"> Sports</label><br>
+				<span id="detail">
+				<input type="checkbox" id="Guitar" name="Guitar" value="Guitar">
+				<label for="Guitar"> Guitar</label><br>
+				</span>
 
 
-			<input type="checkbox" id="Workout" name="Workout" value="Workout">
-			<label for="Workout"> Workout</label><br>
+				<span id="detail">
+				<input type="checkbox" id="Sports" name="Sports" value="Sports">
+				<label for="Sports"> Sports</label><br>
+				</span>
 
 
-			<input type="checkbox" id="Gaming" name="Gaming" value="Gaming">
-			<label for="Gaming"> Gaming</label><br>
+				<span id="detail">
+				<input type="checkbox" id="Workout" name="Workout" value="Workout">
+				<label for="Workout"> Workout</label><br>
+				</span>
 
 
-			<input type="checkbox" id="Art" name="Art" value="Art">
-			<label for="Art"> Art</label><br>
+				<span id="detail">
+				<input type="checkbox" id="Gaming" name="Gaming" value="Gaming">
+				<label for="Gaming"> Gaming</label><br>
+				</span>
+
+
+				<span id="detail">
+				<input type="checkbox" id="Art" name="Art" value="Art">
+				<label for="Art"> Art</label><br>
+				</span>
 	
 
-			<input type="checkbox" id="Camping" name="Camping" value="Camping">
-			<label for="Camping"> Camping</label><br>
+				<span id="detail">
+				<input type="checkbox" id="Camping" name="Camping" value="Camping">
+				<label for="Camping"> Camping</label><br>
+				</span>
 
 
-			<input type="checkbox" id="Cooking" name="Cooking" value="Cooking">
-			<label for="Cooking"> Cooking</label><br>
+				<span id="detail">
+				<input type="checkbox" id="Cooking" name="Cooking" value="Cooking">
+				<label for="Cooking"> Cooking</label><br>
+				</span>
+
+			</div>
 
 
-			<!-- Favorite shade -->
-			<label>Favorite shade</label>
-			<input type="color" id="Favshade_controller" name="Favshade" value="#ADA5E9">
+			<div id="shade_block">
+				<span id="detail">
+				<label>Favorite shade</label>
+				<input type="color" id="Favshade_controller" name="Favshade" value="#ADA5E9">
+				</span>
+			</div>
+			
 
 
-			<!-- Social Media -->
-			<label>Instagram</label><input type="text">
-			<label>LinkedIn</label><input type="text">
-			<label>Facebook</label><input type="text">
-			<label>GitHub</label><input type="text">
-
-
-
-
-			<!-- Current Location -->
-			<label>Location</label>
-			<input type="text" placeholder="enter city name">
-
+			<div id="social_block">
+				<span id="detail"><label>Instagram</label><input type="text"></span>
+				<span id="detail"><label>LinkedIn</label><input type="text"></span>
+				<span id="detail"><label>Facebook</label><input type="text"></span>
+				<span id="detail"><label>GitHub</label><input type="text"></span>
+			</div>
+			
 
 
 			<!-- Final Submit -->
@@ -143,8 +191,6 @@
 
 		</form>
 		</div>
-
-
 	</div>
 	
 

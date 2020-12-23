@@ -3,6 +3,11 @@
 	text-align: center;
 }
 
+#detail
+{
+	display: block;
+}
+
 #overlay
 {
   	margin-top: 10vh;
