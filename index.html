@@ -21,10 +21,10 @@
 			<div id="name_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<div class="inner_box">
 					<h3>Name</h3>
-					<div class="detail_block"><label id="detail">First Name</label><input type="text" class="form-control"></div>
-					<div class="detail_block"><label id="detail">Middle Name</label><input type="text" class="form-control"></div>
-					<div class="detail_block"><label id="detail">Last Name</label><input type="text" class="form-control"></div>
-				</div>
+					<div id="detail"><label>First Name</label><input type="text" class="form-control"></div>
+					<div id="detail"><label>Middle Name</label><input type="text" class="form-control"></div>
+					<div id="detail"><label>Last Name</label><input type="text" class="form-control"></div>
+				</div>	
 			</div>
 			
 
@@ -50,7 +50,7 @@
 
 					<div id="detail" class="detail_block">
 						<label>Date of birth</label>
-						<input class="form-control" type="date" id="DOB_Control" name="DOB">
+						<input class="form-control" type="date"  min="1964-01-01" id="DOB_Control" name="DOB">
 					</div>
 
 
@@ -79,7 +79,7 @@
 					</div>
 					<div id="detail" class="detail_block">
 						<label>Aggregate CGPA</label>
-						<input class="form-control" type="text" placeholder="Please enter on a scale of 10" required pattern="/^[0-4]\.\d\d$/">
+						<input class="form-control" type="text" placeholder="Please enter on a scale of 10" required max="10.00">
 					</div>
 				</div>			
 			</div>
@@ -190,7 +190,7 @@
 
 			</div>
 			<!-- Final Submit -->
-			<button type="submit">Submit
+			<button type="submit" id="stretched_button" class="btn btn-light">Submit</button>
 
 		</form>
 		</div>
