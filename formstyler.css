@@ -1,3 +1,16 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #ededff;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
 #header
 {
 	text-align: center;
@@ -8,12 +21,104 @@
 	display: block;
 }
 
+#flex_row
+{
+	display: flex;
+	flex-wrap: wrap;
+	padding
+}
+
 #overlay
 {
   	margin-top: 10vh;
   	margin-bottom: 10vh;
   	margin-left:10vw;
   	margin-right: 10vw;
-  	background-color: #c7dcff;
+  	background-color: #fff5db;
   	padding: 2% 4% 4% 4%;
+  	box-shadow: 2px 1px 10px 0px #888888;
+}
+
+#name_block, #personal_block, #academics_block, #skills_block, #interests_block, #shade_block, #social_block
+{
+	margin-bottom: 2%;
+}
+
+.inner_box
+{
+	background-color: gray;
+	height: 100%;
+	padding: 4%;
+}
+
+
+/*Block bg setter*/
+
+#name_block .inner_box
+{
+	background-color: #ff6d693b;
+}
+
+#personal_block .inner_box
+{
+	background-color: #fecc503b;
+}
+
+#academics_block .inner_box
+{
+	background-color: #0be7fb3b;
+}
+
+#skills_block .inner_box
+{
+	background-color: #010b8b3b;
+}
+
+#interests_block .inner_box
+{
+	background-color: #1e05213b;
+}
+
+#social_block .inner_box
+{
+	background-color: #eadd463b;
+}
+
+
+/*Header highlight*/
+
+#name_block .inner_box h3 {
+    font-size: 24px;
+    background-color: #ff6d6966;
+    padding: 2%;
+}
+
+#personal_block .inner_box h3 {
+    font-size: 24px;
+    background-color: #fecc5066;
+    padding: 2%;
+}
+
+#academics_block .inner_box h3 {
+    font-size: 24px;
+    background-color: #0be7fb66;
+    padding: 2%;
+}
+
+#skills_block .inner_box h3 {
+    font-size: 24px;
+    background-color: #010b8b66;
+    padding: 2%;
+}
+
+#interests_block .inner_box h3 {
+    font-size: 24px;
+    background-color: #1e052166;
+    padding: 2%;
+}
+
+#social_block .inner_box h3 {
+    font-size: 24px;
+    background-color: #eadd4666;
+    padding: 2%;
 }
