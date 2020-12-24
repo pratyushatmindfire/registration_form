@@ -1,3 +1,4 @@
+
 ::-webkit-scrollbar {
     width: 0px; 
     background: transparent;
@@ -158,4 +159,41 @@ body {
     background-color: #eadd4666;
     padding: 2%;
     backdrop-filter: blur(20px);
+}
+
+
+
+/*Hover setters*/
+
+#name_block .inner_box:hover {
+    background-color: #ff6d69;
+	transition: 0.25s;
+}
+
+#personal_block .inner_box:hover {
+    background-color: #fecc50;
+	transition: 0.25s;
+}
+
+#academics_block .inner_box:hover {
+    background-color: #0be7fb;
+	transition: 0.25s;
+}
+
+#skills_block .inner_box:hover {
+    background-color: #010b8b;
+	transition: 0.25s;
+	color: white;
+}
+
+#interests_block .inner_box:hover {
+    background-color: #1e0521;
+	transition: 0.25s;
+	color: white;
+}
+
+#social_block .inner_box:hover
+{
+	background-color: #eadd46;
+	transition: 0.25s;
 }
