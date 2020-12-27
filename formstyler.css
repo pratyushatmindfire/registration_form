@@ -125,6 +125,12 @@ hr {
 }
 
 
+#single_gender_unit
+{
+  margin-right: 2%;
+  display: inline;
+}
+
 
 /*Block bg setter*/
 
@@ -209,27 +215,32 @@ hr {
 
 #name_block .inner_box:hover {
   background-color: #ff6d69;
+  box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
 }
 
 #personal_block .inner_box:hover {
   background-color: #fecc50;
+  box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
 }
 
 #academics_block .inner_box:hover {
   background-color: #0be7fb;
+  box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
 }
 
 #skills_block .inner_box:hover {
   background-color: #010b8b;
+  box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
   color: white;
 }
 
 #interests_block .inner_box:hover {
   background-color: #1e0521;
+  box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
   color: white;
 }
@@ -237,5 +248,6 @@ hr {
 #social_block .inner_box:hover
 {
   background-color: #eadd46;
+  box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
 }
