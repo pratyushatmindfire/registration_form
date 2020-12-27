@@ -1,131 +1,123 @@
-
 ::-webkit-scrollbar {
-    width: 0px; 
-    background: transparent;
+  width: 0px; 
+  background: transparent;
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #ededff;
-    background-image: url("pattern_bg.jpg");
-    background-repeat: repeat;
-    background-attachment: fixed;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #ededff;
+  background-image: url("pattern_bg.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 2px;
-    margin-bottom: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
 }
 
 #header
 {
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1vw;
-	/*text-shadow: 0px 0px 4px #fcf8e3;*/
-    font-weight: bolder;
-    line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  font-weight: bolder;
+  line-height: 130%;
 }
 
 #detail
 {
-	display: block;
-	margin-bottom: 2%;
+  display: block;
+  margin-bottom: 2%;
 }
 
 #detail:hover
 {
-	transition: 0.2s;
-	transition-timing-function: ease-out;
-	font-size: 1.8em;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+  font-size: 1.8em;
 }
 
 #detail:not( :hover )
 {
-	transition: 0.2s;
-	transition-timing-function: ease-out;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 #flex_row
 {
-	display: flex;
-	flex-wrap: wrap;
-	padding
+  display: flex;
+  flex-wrap: wrap;
+  padding
 }
 
 #overlay
 {
-  	margin-top: 10vh;
-  	margin-bottom: 10vh;
-  	margin-left:10vw;
-  	margin-right: 10vw;
-  	background-color: #f4f4f42b;
-  	padding: 2% 4% 4% 4%;
-  	box-shadow: 2px 1px 10px 5px #737373;
-  	backdrop-filter: blur(14px);
-    border-radius: 30px;
-
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left:10vw;
+  margin-right: 10vw;
+  background-color: #f4f4f42b;
+  padding: 2% 4% 4% 4%;
+  box-shadow: 2px 1px 10px 5px #737373;
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
 }
 
 #name_block, #personal_block, #academics_block, #skills_block, #interests_block, #shade_block, #social_block
 {
-	margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .inner_box
 {
-	background-color: gray;
-	height: 100%;
-	padding: 4%;
-}
-
-.detail_block
-{
-	
+  background-color: gray;
+  height: 100%;
+  padding: 4%;
 }
 
 #checkbox_detail
 {
-	margin: 2%;
-	display: grid;
+  margin: 2%;
+  display: grid;
 }
 
 .checkbox-inline, .radio-inline {
-    position: relative;
-    display: inline-block;
-    padding-left: 20px;
-    margin-bottom: 0;
-    font-weight: 400;
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: 1.15em;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 1.15em;
 }
 
 hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 2px solid #b7b7b7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #b7b7b7;
 }
 
 #stretched_button {
-    width: 20%;
-    font-size: 2.5rem;
-    margin-left: 40%;
-    margin-top: 5%;
-    box-shadow: 0px 0px 3px 1px #737373;
+  width: 20%;
+  font-size: 2.5rem;
+  margin-left: 40%;
+  margin-top: 5%;
+  box-shadow: 0px 0px 3px 1px #737373;
 }
 
 
 #stretched_button:hover
 {
-	transition: 0.4s;
-	background-color: black;
-	color: white;
-	letter-spacing: 4px;
+  transition: 0.4s;
+  background-color: black;
+  color: white;
+  letter-spacing: 4px;
 }
 
 
@@ -134,77 +126,77 @@ hr {
 
 #name_block .inner_box
 {
-	background-color: #ff6d693b;
+  background-color: #ff6d693b;
 }
 
 #personal_block .inner_box
 {
-	background-color: #fecc503b;
+  background-color: #fecc503b;
 }
 
 #academics_block .inner_box
 {
-	background-color: #0be7fb3b;
+  background-color: #0be7fb3b;
 }
 
 #skills_block .inner_box
 {
-	background-color: #010b8b3b;
+  background-color: #010b8b3b;
 }
 
 #interests_block .inner_box
 {
-	background-color: #1e05213b;
+  background-color: #1e05213b;
 }
 
 #social_block .inner_box
 {
-	background-color: #eadd463b;
+  background-color: #eadd463b;
 }
 
 
 /*Header highlight*/
 
 #name_block .inner_box h3 {
-    font-size: 24px;
-    background-color: #ff6d6966;
-    padding: 2%;
-    backdrop-filter: blur(20px);
+  font-size: 24px;
+  background-color: #ff6d6966;
+  padding: 2%;
+  backdrop-filter: blur(20px);
 }
 
 #personal_block .inner_box h3 {
-    font-size: 24px;
-    background-color: #fecc5066;
-    padding: 2%;
-    backdrop-filter: blur(20px);
+  font-size: 24px;
+  background-color: #fecc5066;
+  padding: 2%;
+  backdrop-filter: blur(20px);
 }
 
 #academics_block .inner_box h3 {
-    font-size: 24px;
-    background-color: #0be7fb66;
-    padding: 2%;
-    backdrop-filter: blur(20px);
+  font-size: 24px;
+  background-color: #0be7fb66;
+  padding: 2%;
+  backdrop-filter: blur(20px);
 }
 
 #skills_block .inner_box h3 {
-    font-size: 24px;
-    background-color: #010b8b66;
-    padding: 2%;
-    backdrop-filter: blur(20px);
+  font-size: 24px;
+  background-color: #010b8b66;
+  padding: 2%;
+  backdrop-filter: blur(20px);
 }
 
 #interests_block .inner_box h3 {
-    font-size: 24px;
-    background-color: #1e052166;
-    padding: 2%;
-    backdrop-filter: blur(20px);
+  font-size: 24px;
+  background-color: #1e052166;
+  padding: 2%;
+  backdrop-filter: blur(20px);
 }
 
 #social_block .inner_box h3 {
-    font-size: 24px;
-    background-color: #eadd4666;
-    padding: 2%;
-    backdrop-filter: blur(20px);
+  font-size: 24px;
+  background-color: #eadd4666;
+  padding: 2%;
+  backdrop-filter: blur(20px);
 }
 
 
@@ -212,34 +204,34 @@ hr {
 /*Hover setters*/
 
 #name_block .inner_box:hover {
-    background-color: #ff6d69;
-	transition: 0.25s;
+  background-color: #ff6d69;
+  transition: 0.25s;
 }
 
 #personal_block .inner_box:hover {
-    background-color: #fecc50;
-	transition: 0.25s;
+  background-color: #fecc50;
+  transition: 0.25s;
 }
 
 #academics_block .inner_box:hover {
-    background-color: #0be7fb;
-	transition: 0.25s;
+  background-color: #0be7fb;
+  transition: 0.25s;
 }
 
 #skills_block .inner_box:hover {
-    background-color: #010b8b;
-	transition: 0.25s;
-	color: white;
+  background-color: #010b8b;
+  transition: 0.25s;
+  color: white;
 }
 
 #interests_block .inner_box:hover {
-    background-color: #1e0521;
-	transition: 0.25s;
-	color: white;
+  background-color: #1e0521;
+  transition: 0.25s;
+  color: white;
 }
 
 #social_block .inner_box:hover
 {
-	background-color: #eadd46;
-	transition: 0.25s;
+  background-color: #eadd46;
+  transition: 0.25s;
 }

@@ -1,203 +1,130 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Registration Form</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="formstyler.css">
-</head>
-<body class="fade-in">
-	<div id="overlay">
-		<hr>
-		<h1 id="header">student registration form</h1>
-		<hr>
-
-
-		<div>
-		<form>
-
-			<div class="row" id="flex_row">
-			<div id="name_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="inner_box">
-					<h3>Name</h3>
-					<div id="detail"><label>First Name</label><input type="text" class="form-control"></div>
-					<div id="detail"><label>Middle Name</label><input type="text" class="form-control"></div>
-					<div id="detail"><label>Last Name</label><input type="text" class="form-control"></div>
-				</div>	
-			</div>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="formstyler.css">
+  </head>
+  <body>
+    <div id="overlay">
+	  <hr>
+	  <h1 id="header">student registration form</h1>
+	  <hr>
+	  <form>
+	    <div class="row" id="flex_row">
+	      <div id="name_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	        <div class="inner_box">
+	          <h3>Name</h3>
+	          <div id="detail"><label>First Name</label><input type="text" class="form-control"></div>
+	          <div id="detail"><label>Middle Name</label><input type="text" class="form-control"></div>
+	          <div id="detail"><label>Last Name</label><input type="text" class="form-control"></div>
+	        </div>	
+	      </div>
 			
 
-			<div id="personal_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="inner_box">
-					<h3>Personal Details</h3>
-				
-					<span id="detail" class="detail_block"><label>Age</label><input type="number" required pattern="[0-9]" min=6 max=50 class="form-control"></span>
+		  <div id="personal_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		    <div class="inner_box">
+			  <h3>Personal Details</h3>
+			  <span id="detail" class="detail_block"><label>Age</label><input type="number" required pattern="[0-9]" min=6 max=50 class="form-control"></span>
 
 				
-					<div id="detail" class="detail_block">
-						<label>Gender</label>
-						<input class="form-check-input" type="radio" name="gender_control" id="male" value="male">
-	    				<label for="nameA">Male</label>
+			  <div id="detail" class="detail_block">
+			    <label>Gender</label>
+				<input class="form-check-input" type="radio" name="gender_control" id="male" value="male">
+	    		<label for="nameA">Male</label>
 
-    					<input class="form-check-input" type="radio" name="gender_control" id="female" value="female">
-    					<label for="nameB">Female</label>
+    			<input class="form-check-input" type="radio" name="gender_control" id="female" value="female">
+    			<label for="nameB">Female</label>
 
-    					<input class="form-check-input" type="radio" name="gender_control" id="others" value="others">
-    					<label for="nameB">Others</label>
-					</div>
+    			<input class="form-check-input" type="radio" name="gender_control" id="others" value="others">
+    			<label for="nameB">Others</label>
+		      </div>
 				
 
-					<div id="detail" class="detail_block">
-						<label>Date of birth</label>
-						<input class="form-control" type="date"  min="1964-01-01" id="DOB_Control" name="DOB">
-					</div>
+			  <div id="detail" class="detail_block">
+			    <label>Date of birth</label>
+				<input class="form-control" type="date"  min="1964-01-01" id="DOB_Control" name="DOB">
+			  </div>
 
 
-					<div id="detail" class="detail_block">
-						<label>Location</label>
-						<input class="form-control" type="text" placeholder="city name">
-					</div>
-				</div>	
-			</div>
-			</div>
+			  <div id="detail" class="detail_block">
+			    <label>Location</label>
+				<input class="form-control" type="text" placeholder="city name">
+			  </div>
+			</div>	
+		  </div>
+		</div>
 
 
-			<div class="row" id="flex_row">	
-			<div id="academics_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="inner_box">
-					<h3>Academics</h3>		
-					<div id="detail" class="detail_block">
-						<label>Branch</label>
-						<select name="branch_control" id="branch" class="form-control">
-							<option value="none">-</option>
-  							<option value="CSE">Computer Science and Engineering</option>
-  							<option value="E">Electronics</option>
-  							<option value="C">Civil</option>
-  							<option value="M">Mechanical</option>
-						</select>
-					</div>
-					<div id="detail" class="detail_block">
-						<label>Aggregate CGPA</label>
-						<input class="form-control" type="text" placeholder="Please enter on a scale of 10" required max="10.00">
-					</div>
-				</div>			
-			</div>
+		<div class="row" id="flex_row">	
+		  <div id="academics_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		    <div class="inner_box">
+			  <h3>Academics</h3>		
+			  <div id="detail" class="detail_block">
+			    <label>Branch</label>
+			      <select name="branch_control" id="branch" class="form-control">
+				    <option value="none">-</option>
+  					  <option value="CSE">Computer Science and Engineering</option>
+  					  <option value="E">Electronics</option>
+  					  <option value="C">Civil</option>
+  					  <option value="M">Mechanical</option>
+					</select>
+			  </div>
+			  <div id="detail" class="detail_block">
+			    <label>Aggregate CGPA</label>
+				<input class="form-control" type="text" placeholder="Please enter on a scale of 10" required max="10.00">
+			  </div>
+			</div>			
+		  </div>
     		
 
-			<div id="skills_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="inner_box">
-					<h3>Primary Skills</h3>
-
-					<span id="checkbox_detail"><label class="checkbox-inline" for="NodeJS"><input type="checkbox" id="NodeJS" name="NodeJS" value="NodeJS">
-					Node JS</label></span>
-				
-
-
-					<span id="checkbox_detail"><label class="checkbox-inline" for="Express"><input type="checkbox" id="Express" name="Express" value="Express">
-					Express</label></span>
-
-
-					<span id="checkbox_detail"><label class="checkbox-inline" for="Angular"><input type="checkbox" id="Angular" name="Angular" value="Angular">
-					Angular</label></span>
-
-
-					<span id="checkbox_detail"><label class="checkbox-inline" for="React"><input type="checkbox" id="React" name="React" value="React"> 
-					React</label></span>
-	
-
-					<span id="checkbox_detail"><label class="checkbox-inline" for="MongoDB"><input type="checkbox" id="MongoDB" name="MongoDB" value="MongoDB">
-					MongoDB</label></span>
-
-
-					<span id="checkbox_detail"><label class="checkbox-inline" for="Postgres"><input type="checkbox" id="Postgres" name="Postgres" value="Postgres"> Postgres</label></span>
-				</div>				
-			</div>
-			</div>
+		  <div id="skills_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		    <div class="inner_box">
+			  <h3>Primary Skills</h3>
+                <span id="checkbox_detail"><label class="checkbox-inline" for="NodeJS"><input type="checkbox" id="NodeJS" name="NodeJS" value="NodeJS">Node JS</label></span>
+				<span id="checkbox_detail"><label class="checkbox-inline" for="Express"><input type="checkbox" id="Express" name="Express" value="Express">Express</label></span>
+                <span id="checkbox_detail"><label class="checkbox-inline" for="Angular"><input type="checkbox" id="Angular" name="Angular" value="Angular">Angular</label></span>
+                <span id="checkbox_detail"><label class="checkbox-inline" for="React"><input type="checkbox" id="React" name="React" value="React"> React</label></span>
+                <span id="checkbox_detail"><label class="checkbox-inline" for="MongoDB"><input type="checkbox" id="MongoDB" name="MongoDB" value="MongoDB">MongoDB</label></span>
+                <span id="checkbox_detail"><label class="checkbox-inline" for="Postgres"><input type="checkbox" id="Postgres" name="Postgres" value="Postgres"> Postgres</label></span>
+			</div>				
+		  </div>
+		</div>
 			
 
-			<div class="row" id="flex_row">
-			<div id="interests_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="inner_box">
-					<h3>Interests</h3>
-
-					<span id="checkbox_detail">
-					<label for="HomeDIY" class="checkbox-inline">
-					<input type="checkbox" id="HomeDIY" name="HomeDIY" value="HomeDIY">
-					HomeDIY</label>
-					</span>
-
-
-					<span id="checkbox_detail">
-					<label for="Guitar" class="checkbox-inline">
-					<input type="checkbox" id="Guitar" name="Guitar" value="Guitar">
-					Guitar</label>
-					</span>
-
-
-					<span id="checkbox_detail">
-					<label for="Sports" class="checkbox-inline"> 
-					<input type="checkbox" id="Sports" name="Sports" value="Sports">
-					Sports</label>
-					</span>
-
-
-					<span id="checkbox_detail">
-					<label for="Workout" class="checkbox-inline"> 
-					<input type="checkbox" id="Workout" name="Workout" value="Workout">
-					Workout</label>
-					</span>
-
-
-					<span id="checkbox_detail">
-					<label for="Gaming" class="checkbox-inline">
-					<input type="checkbox" id="Gaming" name="Gaming" value="Gaming">
-					Gaming</label>
-					</span>
-
-
-					<span id="checkbox_detail">
-					<label for="Art" class="checkbox-inline">
-					<input type="checkbox" id="Art" name="Art" value="Art">
-					Art</label>
-					</span>
-	
-
-					<span id="checkbox_detail">
-					<label for="Camping" class="checkbox-inline">
-					<input type="checkbox" id="Camping" name="Camping" value="Camping">
-					Camping</label>
-					</span>
-
-
-					<span id="checkbox_detail">
-					<label for="Cooking" class="checkbox-inline">
-					<input type="checkbox" id="Cooking" name="Cooking" value="Cooking">
-					Cooking</label><br>
-					</span>
-				</div>
+		<div class="row" id="flex_row">
+		  <div id="interests_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		    <div class="inner_box">
+			  <h3>Interests</h3>
+              <span id="checkbox_detail"><label for="HomeDIY" class="checkbox-inline"><input type="checkbox" id="HomeDIY" name="HomeDIY" value="HomeDIY">HomeDIY</label></span>
+              <span id="checkbox_detail"><label for="Guitar" class="checkbox-inline"><input type="checkbox" id="Guitar" name="Guitar" value="Guitar">Guitar</label></span>
+              <span id="checkbox_detail"><label for="Sports" class="checkbox-inline"><input type="checkbox" id="Sports" name="Sports" value="Sports">Sports</label></span>
+              <span id="checkbox_detail"><label for="Workout" class="checkbox-inline"><input type="checkbox" id="Workout" name="Workout" value="Workout">Workout</label></span>
+              <span id="checkbox_detail"><label for="Gaming" class="checkbox-inline"><input type="checkbox" id="Gaming" name="Gaming" value="Gaming">Gaming</label></span>
+			  <span id="checkbox_detail"><label for="Art" class="checkbox-inline"><input type="checkbox" id="Art" name="Art" value="Art">Art</label></span>
+	          <span id="checkbox_detail"><label for="Camping" class="checkbox-inline"><input type="checkbox" id="Camping" name="Camping" value="Camping">Camping</label></span>
+			  <span id="checkbox_detail"><label for="Cooking" class="checkbox-inline"><input type="checkbox" id="Cooking" name="Cooking" value="Cooking">Cooking</label><br></span>
 			</div>
+		  </div>
 
-			<div id="social_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="inner_box">
-					<h3>Social Media</h3>
-					<span id="detail" class="detail_block"><label>Instagram <i class="fa fa-instagram" aria-hidden="true"></i></label><input class="form-control" type="text"></span>
-					<span id="detail" class="detail_block"><label>LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></label><input class="form-control" type="text"></span>
-					<span id="detail" class="detail_block"><label>Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></label><input class="form-control" type="text"></span>
-					<span id="detail" class="detail_block"><label>GitHub <i class="fa fa-github" aria-hidden="true"></i></label><input class="form-control" type="text"></span>
-				</div>	
-			</div>
+		  <div id="social_block" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		    <div class="inner_box">
+			  <h3>Social Media</h3>
+			  <span id="detail" class="detail_block"><label>Instagram <i class="fa fa-instagram" aria-hidden="true"></i></label><input class="form-control" type="text"></span>
+			  <span id="detail" class="detail_block"><label>LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></label><input class="form-control" type="text"></span>
+			  <span id="detail" class="detail_block"><label>Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></label><input class="form-control" type="text"></span>
+			  <span id="detail" class="detail_block"><label>GitHub <i class="fa fa-github" aria-hidden="true"></i></label><input class="form-control" type="text"></span>
+			</div>	
+		  </div>
 
-			</div>
-			<!-- Final Submit -->
-			<button type="submit" id="stretched_button" class="btn btn-light">Submit</button>
-
-		</form>
 		</div>
-	</div>
-	
 
-	
-	
-</body>
+
+		<!-- Final Submit -->
+		<button type="submit" id="stretched_button" class="btn btn-light">Submit</button>
+
+	  </form>
+	</div>	
+  </body>
 </html>
