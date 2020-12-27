@@ -123,11 +123,21 @@ hr {
   text-shadow: 2px 2px 5px #854500;
 }
 
+#gender_options
+{
+	display: inline;
+	margin-left: 2%;
+}
 
 #single_gender_unit
 {
   margin-right: 2%;
   display: inline;
+}
+
+#mandatory
+{
+	color: red;
 }
 
 
@@ -229,6 +239,7 @@ hr {
   background-color: #ff6d6966;
   padding: 2%;
   backdrop-filter: blur(20px);
+  text-align: center;
 }
 
 #account_block .inner_box h3 {
@@ -236,6 +247,7 @@ hr {
   background-color: #fecc5066;
   padding: 2%;
   backdrop-filter: blur(20px);
+  text-align: center;
 }
 
 #personal_block .inner_box h3 {
@@ -243,10 +255,12 @@ hr {
   background-color: #010b8b66;
   padding: 2%;
   backdrop-filter: blur(20px);
+  text-align: center;
 }
 
 #personal_block .inner_box h3 {
   font-size: 24px;
+  text-align: center;
 }
 
 
