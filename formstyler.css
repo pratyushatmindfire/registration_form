@@ -67,7 +67,7 @@ body {
   border-radius: 30px;
 }
 
-#name_block, #personal_block, #academics_block, #skills_block, #interests_block, #shade_block, #social_block
+#name_block, #personal_block, #account_block
 {
   margin-bottom: 2%;
 }
@@ -118,7 +118,6 @@ hr {
   transition: 0.4s;
   background-color: black;
   color: white;
-  /*letter-spacing: 2px;*/
   background-color: black;
   color: #f3bf80;
   text-shadow: 2px 2px 5px #854500;
@@ -132,6 +131,72 @@ hr {
 }
 
 
+/*Subscribe button css*/
+
+#subscribe_text
+{
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+#subscribe_yes
+{
+	color: #00bd00;
+    font-weight: 500;
+    border-color: #00bd00;
+    border-width: 1px;
+    background-color: white;
+    box-shadow: 0px 0px 6px -2px #929292;
+    font-size: 120%;
+    margin-right: 5%;
+}
+
+#subscribe_no
+{
+	color: #e40000;
+    font-weight: 500;
+    border-color: #e40000;
+    border-width: 1px;
+    background-color: white;
+    box-shadow: 0px 0px 6px -2px #929292;
+    font-size: 120%;
+}
+
+#subscribe_yes:hover
+{
+	background-color: #00bd00;
+	color: white;
+}
+
+#subscribe_no:hover
+{
+	background-color: #e40000;
+	color: white;
+}
+
+#subscribe_yes:active
+{
+	background-color: #00bd00;
+	color: white;
+}
+
+#subscribe_no:active
+{
+	background-color: #e40000;
+	color: white;
+}
+
+#subscribe_yes, #subscribe_no:focus
+{
+	outline: none;
+}
+
+
+#subscribe_button_group
+{
+	text-align: center;
+}
+
 /*Block bg setter*/
 
 #name_block .inner_box
@@ -139,30 +204,22 @@ hr {
   background-color: #ff6d693b;
 }
 
-#personal_block .inner_box
+#account_block .inner_box
 {
   background-color: #fecc503b;
 }
 
-#academics_block .inner_box
-{
-  background-color: #0be7fb3b;
-}
-
-#skills_block .inner_box
+#personal_block .inner_box
 {
   background-color: #010b8b3b;
 }
 
-#interests_block .inner_box
+#subscribe_block .inner_box
 {
-  background-color: #1e05213b;
+  background-color: #7a7a7a3b;
+  padding-top: 2%;
 }
 
-#social_block .inner_box
-{
-  background-color: #eadd463b;
-}
 
 
 /*Header highlight*/
@@ -174,41 +231,23 @@ hr {
   backdrop-filter: blur(20px);
 }
 
-#personal_block .inner_box h3 {
+#account_block .inner_box h3 {
   font-size: 24px;
   background-color: #fecc5066;
   padding: 2%;
   backdrop-filter: blur(20px);
 }
 
-#academics_block .inner_box h3 {
-  font-size: 24px;
-  background-color: #0be7fb66;
-  padding: 2%;
-  backdrop-filter: blur(20px);
-}
-
-#skills_block .inner_box h3 {
+#personal_block .inner_box h3 {
   font-size: 24px;
   background-color: #010b8b66;
   padding: 2%;
   backdrop-filter: blur(20px);
 }
 
-#interests_block .inner_box h3 {
+#personal_block .inner_box h3 {
   font-size: 24px;
-  background-color: #1e052166;
-  padding: 2%;
-  backdrop-filter: blur(20px);
 }
-
-#social_block .inner_box h3 {
-  font-size: 24px;
-  background-color: #eadd4666;
-  padding: 2%;
-  backdrop-filter: blur(20px);
-}
-
 
 
 /*Hover setters*/
@@ -219,35 +258,23 @@ hr {
   transition: 0.25s;
 }
 
-#personal_block .inner_box:hover {
+#account_block .inner_box:hover {
   background-color: #fecc50;
   box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
 }
 
-#academics_block .inner_box:hover {
-  background-color: #0be7fb;
-  box-shadow: inset 0px 0px 20px 3px #0000001f;
-  transition: 0.25s;
-}
 
-#skills_block .inner_box:hover {
+#personal_block .inner_box:hover {
   background-color: #010b8b;
   box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
   color: white;
 }
 
-#interests_block .inner_box:hover {
-  background-color: #1e0521;
+#subscribe_block .inner_box:hover {
+  background-color: white;
   box-shadow: inset 0px 0px 20px 3px #0000001f;
   transition: 0.25s;
-  color: white;
-}
-
-#social_block .inner_box:hover
-{
-  background-color: #eadd46;
-  box-shadow: inset 0px 0px 20px 3px #0000001f;
-  transition: 0.25s;
+  color: black;
 }
