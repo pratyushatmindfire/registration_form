@@ -146,24 +146,24 @@ hr {
 #subscribe_yes
 {
 	color: #00bd00;
-    font-weight: 500;
-    border-color: #00bd00;
-    border-width: 1px;
-    background-color: white;
-    box-shadow: 0px 0px 6px -2px #929292;
-    font-size: 120%;
-    margin-right: 5%;
+  font-weight: 500;
+  border-color: #00bd00;
+  border-width: 1px;
+  background-color: white;
+  box-shadow: 0px 0px 6px -2px #929292;
+  font-size: 120%;
+  margin-right: 5%;
 }
 
 #subscribe_no
 {
 	color: #e40000;
-    font-weight: 500;
-    border-color: #e40000;
-    border-width: 1px;
-    background-color: white;
-    box-shadow: 0px 0px 6px -2px #929292;
-    font-size: 120%;
+  font-weight: 500;
+  border-color: #e40000;
+  border-width: 1px;
+  background-color: white;
+  box-shadow: 0px 0px 6px -2px #929292;
+  font-size: 120%;
 }
 
 #subscribe_yes:hover
