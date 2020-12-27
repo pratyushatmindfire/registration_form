@@ -34,12 +34,6 @@ body {
   margin-bottom: 2%;
 }
 
-#detail:hover
-{
-  transition: 0.2s;
-  transition-timing-function: ease-out;
-  font-size: 1.8em;
-}
 
 #detail:not( :hover )
 {
